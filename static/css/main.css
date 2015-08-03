@@ -1,5 +1,9 @@
 #headerContainer{
-	width: 100%
+	width: 100%;
+	background-color: #fff;
+}
+a, a:visited, a:hover, a:focus, a:link{
+	color: #0C8B07;
 }
 
 footer{
@@ -10,8 +14,14 @@ footer{
 	padding: 10px;
 }
 main > div {
-	min-height: 240px;
-	padding: 20px;
+	height: 100vh;
+	padding: 368px 0 0 0;
+}
+
+@media (max-width: 992px ){
+	main > div {
+		padding: 244px 0 0 0;
+	}
 }
 main > div > .container{
 	background: rgba(255,255,255,0.7);
