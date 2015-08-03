@@ -1,0 +1,43 @@
+#headerContainer{
+	width: 100%
+}
+
+footer{
+	background-color: #000;
+	bottom: 0;
+	position: relative;
+	color: #fff;
+	padding: 10px;
+}
+main > div {
+	min-height: 240px;
+	padding: 20px;
+}
+main > div > .container{
+	background: rgba(255,255,255,0.7);
+}
+#heroContainer, #homeContainer, #conferenceContainer, #facilityContainer, #hotelContainer, #pricingContainer, #scheduleContainer, #contactContainer{
+	background: rgba(0,0,0,0.5);
+	background-size: cover;
+}
+#homeContainer {
+	background-image: url('../images/homeBG.jpg');
+}
+#conferenceContainer {
+	background-image: url('../images/conferenceBG.jpg');
+}
+#facilityContainer {
+	background-image: url('../images/facilityBG.jpg');
+}
+#hotelContainer {
+	background-image: url('../images/hotelBG.jpg');
+}
+#pricingContainer {
+	background-image: url('../images/pricingBG.jpg');
+}
+#scheduleContainer {
+	background-image: url('../images/scheduleBG.jpg');
+}
+#contactContainer{
+	background-image: url('../images/contactBG.jpg');
+}
