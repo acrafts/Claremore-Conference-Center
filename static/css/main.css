@@ -39,6 +39,9 @@ main > div {
 	padding: 0 0 0 0;
 }
 
+main > #pricingContainer{
+	height: auto;
+}
 main > div > div.containerWrapper{
 	padding: 20vh 0;
 }
