@@ -2,9 +2,11 @@
 #headerContainer{
 	width: 100%;
 	background-color: #fff;
-	-webkit-box-shadow: 0px 10px 167px -5px rgba(0,0,0,0.4);
-	-moz-box-shadow: 0px 10px 167px -5px rgba(0,0,0,0.4);
-	box-shadow: 0px 10px 167px -5px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,.7);
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,.7);
+	box-shadow: 0 0 20px rgba(0,0,0,.7);
+	position: fixed;
+	z-index: 1001;
 }
 
 a, a:visited, a:hover, a:focus, a:link{
@@ -23,11 +25,17 @@ a, a:visited, a:hover, a:focus, a:link{
 	margin: 0 0 20px;
 }
 
+@media (max-width: 360px){
+	#headerContainer .brand a img{
+		width: 80%;
+	}
+}
+
 .navbar-toggle{
 	position: absolute;
 	bottom: 10px;
 	right: 0;
-	z-index: 1001;
+	z-index: 1003;
 }
 
 /*Main Wrapper*/
@@ -39,11 +47,25 @@ main > div {
 	padding: 0 0 0 0;
 }
 
-main > #pricingContainer{
+main > #pricingContainer, main > #contactContainer, main > #conferenceContainer {
 	height: auto;
+}
+
+main > #contactContainer{
+	height: auto;
+}
+
+@media (max-width: 990px){
+	main > div{
+		height: auto;
+	}
 }
 main > div > div.containerWrapper{
 	padding: 20vh 0;
+}
+main > div#heroContainer > div.containerWrapper{
+	padding: 0 0;
+	height: 100%;
 }
 
 main > div > div.containerWrapper >div.container{
@@ -56,7 +78,6 @@ main > div > div.containerWrapper >div.container{
 
 main > div > div > .container{
 	background: rgba(255,255,255,0.9);
-
 }
 
 #heroContainer, #homeContainer, #conferenceContainer, #facilityContainer, #hotelContainer, #pricingContainer, #scheduleContainer, #contactContainer{
@@ -91,6 +112,105 @@ main > div > div > .container{
 #contactContainer{
 	background-image: url('../images/contactBG.jpg');
 }
+
+/*Hero Slider*/
+div#heroContainer > div.containerWrapper > div.cycle-slideshow{
+	height: 100%;
+}
+
+div#heroContainer > div.containerWrapper > div.cycle-slideshow > div{
+	height: 100%;
+	width: 100%;
+}
+
+div#heroContainer > div.containerWrapper > div.cycle-slideshow > div.cycle-slide > div{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+}
+
+div#heroContainer > div.containerWrapper > div.cycle-slideshow > div.cycle-slide  > div:before{
+	content: '';
+  	display: inline-block !important;
+  	height: 100%;
+  	vertical-align: middle;
+  	margin-right: -0.25em;
+}
+
+div#heroContainer > div.containerWrapper > div.cycle-slideshow > div.cycle-slide > div>  div.container{
+	background: rgba(255,255,255,0.9);
+	display: inline-block;
+  	vertical-align: middle;
+  	margin-top: 120px;
+  	padding: 10px;
+}
+
+#heroContainer #slide0, #heroContainer #slide1, #heroContainer #slide2, #heroContainer #slide3{
+	background: rgba(0,0,0,0.5);
+	background-size: cover;
+}
+#heroContainer #slide0{
+	background-image: url('../images/conferenceBG.jpg');
+}
+#heroContainer #slide1{
+	background-image: url('../images/facilityBG.jpg');
+}
+#heroContainer #slide2{
+	background-image: url('../images/pricingBG.jpg');
+}
+#heroContainer #slide3{
+	background-image: url('../images/contactBG.jpg');
+}
+
+#heroContainer #buttonsWrapper{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+ }
+
+#heroContainer #buttonsWrapper:before{
+	content: '';
+  	display: inline-block !important;
+  	height: 100%;
+  	vertical-align: middle;
+  	margin-right: -0.25em;
+}
+
+#heroContainer #buttonsWrapper #buttons{
+  	display: inline-block;
+  	vertical-align: middle;
+}
+
+#heroContainer #buttonsWrapper #buttons button{
+	position: absolute;
+  	z-index: 1000 !important;
+  	background-color: rgba(0,0,0,0);
+  	border: none;
+  	font-size: 48px;
+  	color: #fff;
+  	text-shadow: 0 0 20px rgba(0,0,0,.7);
+}
+#heroContainer #buttonsWrapper #buttons button:focus{
+	outline: none;
+}
+
+#heroContainer #buttonsWrapper #buttons button.slide-toggle-left{
+	left: 30px;
+}
+#heroContainer #buttonsWrapper #buttons button.slide-toggle-pause{
+	bottom: 30px;
+} 
+#heroContainer #buttonsWrapper #buttons button.slide-toggle-right{
+	right: 30px;
+}  
 
 /*Google Maps*/
 #map-canvas {
