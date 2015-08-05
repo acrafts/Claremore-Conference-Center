@@ -66,6 +66,7 @@ main > div > div.containerWrapper{
 main > div#heroContainer > div.containerWrapper{
 	padding: 0 0;
 	height: 100%;
+	position: relative;
 }
 
 main > div > div.containerWrapper >div.container{
@@ -201,7 +202,6 @@ div#heroContainer > div.containerWrapper > div.cycle-slideshow > div.cycle-slide
 #heroContainer #buttonsWrapper #buttons button:focus{
 	outline: none;
 }
-
 #heroContainer #buttonsWrapper #buttons button.slide-toggle-left{
 	left: 30px;
 }
@@ -211,6 +211,17 @@ div#heroContainer > div.containerWrapper > div.cycle-slideshow > div.cycle-slide
 #heroContainer #buttonsWrapper #buttons button.slide-toggle-right{
 	right: 30px;
 }  
+@media (max-width: 990px){
+	#heroContainer #buttonsWrapper #buttons button.slide-toggle-left{
+		left: 0;
+	}
+	#heroContainer #buttonsWrapper #buttons button.slide-toggle-pause{
+		bottom: 0;
+	} 
+	#heroContainer #buttonsWrapper #buttons button.slide-toggle-right{
+		right: 0;
+	}  
+}
 
 /*Google Maps*/
 #map-canvas {
