@@ -131,6 +131,15 @@
             <div class="containerWrapper">
                 <div class="container">
                     <h2>Home</h2>
+                    <img height="300"src="/static/images/hotelBG.jpg"  class="fullWidth"/> 
+                    <p>The rumors are true. We came to you! Claremore now has it's own conference center. We will be opening our beautiful, state of the art facility soon. We look forward to serving all the meeting and event needs of Claremore and the surrounding communities. Keep checking back for construction updates and upcoming events, and don't forget to like us on Facebook for your chance to win our Like, Share WIN Contest</p>                    
+                    <img height="300"src="/static/images/hotelBG.jpg"  class="left"/> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <img height="300"src="/static/images/contactBG.jpg"  class="right"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>The rumors are true. We came to you!Claremore now has it's own conference center. We will be opening our beautiful, state of the art facility soon. We look forward to serving all the meeting and event needs of Claremore and the surrounding communities. Keep checking back for construction updates and upcoming events, and don't forget to like us on Facebook for your chance to win our Like, Share WIN Contest</p>                    
+                    <img height="300"src="/static/images/hotelBG.jpg"  class="left"/> 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
@@ -262,44 +271,44 @@
                     <div class="row">
                       <div class="col-xs-6 col-md-3">
                         <a href="#" class="thumbnail">
-                          <img alt="" src="" style="height: 180px; width: 100%; display: block;">
+                          <img alt="" src="/static/images/contactBG.jpg" style="height: 180px; width: 100%; display: block;">
                         </a>
                       </div>
                       <div class="col-xs-6 col-md-3">
                         <a href="#" class="thumbnail">
-                          <img alt="" src="" style="height: 180px; width: 100%; display: block;">
+                          <img alt="" src="/static/images/conferenceBG.jpg" style="height: 180px; width: 100%; display: block;">
                         </a>
                       </div>
                       <div class="col-xs-6 col-md-3">
                         <a href="#" class="thumbnail">
-                          <img alt="" src="" style="height: 180px; width: 100%; display: block;">
+                          <img alt="" src="/static/images/facilityBG.jpg" style="height: 180px; width: 100%; display: block;">
                         </a>
                       </div>
                       <div class="col-xs-6 col-md-3">
                         <a href="#" class="thumbnail">
-                          <img alt="" src="" style="height: 180px; width: 100%; display: block;">
+                          <img alt="" src="/static/images/hotelBG.jpg" style="height: 180px; width: 100%; display: block;">
                         </a>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-xs-6 col-md-3">
                         <a href="#" class="thumbnail">
-                          <img alt="" src="" style="height: 180px; width: 100%; display: block;">
+                          <img alt="" src="/static/images/pricingBG.jpg" style="height: 180px; width: 100%; display: block;">
                         </a>
                       </div>
                       <div class="col-xs-6 col-md-3">
                         <a href="#" class="thumbnail">
-                          <img alt="" src="" style="height: 180px; width: 100%; display: block;">
+                          <img alt="" src="/static/images/scheduleBG.jpg" style="height: 180px; width: 100%; display: block;">
                         </a>
                       </div>
                       <div class="col-xs-6 col-md-3">
                         <a href="#" class="thumbnail">
-                          <img alt="" src="" style="height: 180px; width: 100%; display: block;">
+                          <img alt="" src="/static/images/homeBG.jpg" style="height: 180px; width: 100%; display: block;">
                         </a>
                       </div>
                       <div class="col-xs-6 col-md-3">
                         <a href="#" class="thumbnail">
-                          <img alt="" src="" style="height: 180px; width: 100%; display: block;">
+                          <img alt="" src="/static/images/contactBG.jpg" style="height: 180px; width: 100%; display: block;">
                         </a>
                       </div>
                     </div>
@@ -344,8 +353,14 @@
         (function($){
             $(function(){
                 var navToggle = $(".navbar-nav li a");
+                var navBar = $("#headerContainer .navbar-nav");
                 var collapse = function(){
                     $(".navbar-collapse").collapse('hide');
+                }
+
+                var activate = function(){
+                    navBar.find(".active").removeClass("active");
+                    $(this).addClass("active");
                 }
 
                 function resizeQueue(){
@@ -353,6 +368,12 @@
                         navToggle.bind('click', collapse);
                     }else{
                         navToggle.unbind('click', collapse);
+                    }
+
+                    if($(window).outerWidth() > 768){
+                        navBar.find("li > a").bind('click', activate);
+                    }else{
+                        navBar.find("li > a").unbind('click', activate);
                     }
 
                     var testContainerConstraints = function(index, value){

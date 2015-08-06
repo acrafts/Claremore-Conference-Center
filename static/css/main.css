@@ -38,6 +38,18 @@ a, a:visited, a:hover, a:focus, a:link{
 	z-index: 1003;
 }
 
+.navbar-nav a.active{
+	border-bottom: solid 4px #96C086;
+}
+@media (min-width: 760px){
+	.navbar-nav a:hover{
+		border-bottom: solid 4px #96C086;
+	}
+	.navbar-nav a.active{
+		background-color: #eee;
+	}
+}
+
 /*Main Wrapper*/
 main{}
 
@@ -103,6 +115,23 @@ main > div > div > .container{
 
 #contactContainer{
 	background-image: url('../images/contactBG.jpg');
+}
+
+/*Container Global Styling*/
+.container img.left{
+	float:left;
+	margin-right: 20px;
+}
+.container img.right{
+	float:right;
+	margin-left: 20px;
+}
+.container img.fullWidth{
+	width: 100%;
+	height: auto;
+}
+.container .jumbotron a{
+	color: rgba(255,255,255,0.7);
 }
 
 /*Hero Slider*/
