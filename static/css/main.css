@@ -97,9 +97,7 @@ main > div > div > .container{
 	background-image: url('../images/conferenceBG.jpg');
 }
 
-#facilityContainer {
-	background-image: url('../images/facilityBG.jpg');
-}
+
 
 #hotelContainer {
 	background-image: url('../images/hotelBG.jpg');
@@ -116,6 +114,42 @@ main > div > div > .container{
 #contactContainer{
 	background-image: url('../images/contactBG.jpg');
 }
+
+/* Start Facility Containers */
+#facilityContainer {
+	background-image: url('../images/facilityBG.jpg');
+}
+#wrbContainer{
+	/*background-image: url('../images/wrbBG.jpg');*/
+}
+#cehContainer{
+	/*background-image: url('../images/cehBG.jpg');*/
+}
+#mpbrContainer{
+	/*background-image: url('../images/mpbrBG.jpg');*/
+}
+#lrjmdrContainer{
+	/*background-image: url('../images/lrjmdrBG.jpg');*/
+}
+#otContainer{
+	/*background-image: url('../images/otBG.jpg');*/
+}
+#pContainer{
+	/*background-image: url('../images/pBG.jpg');*/
+}
+#cpkContainer{
+	/*background-image: url('../images/cpkBG.jpg');*/
+	text-align: center;
+}
+#cpkContainer ul{
+	list-style: none;
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+/* End Facility Containers */
 
 /*Container Global Styling*/
 .container img.left{
