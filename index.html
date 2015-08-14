@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Page Title</title>
@@ -29,13 +30,14 @@
     </script>
     <!--TODO: Google Analytics-->
 </head>
+
 <body>
     <header>
-        <div id="headerContainer" class="navbar-static-top container-fluid" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+        <div id="headerContainer" class="navbar-static-top container-fluid" data-spy="affix" data-offset-top="168">
             <div class="container">
                 <div class="navbar-header">
                     <div>
-                        <button type="button" class="navbar-inverse  navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-inverse  navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="navbar-default icon-bar"></span>
                             <span class="navbar-default icon-bar"></span>
@@ -47,11 +49,11 @@
                         <!--TODO: add social links-->
                         <!--<small>Subtext for header</small>-->
                     </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="collapse navbar-collapse" id="mainNav">
                         <ul class="nav navbar-nav">
                             <li><a href="#homeContainer" class="active">Home</a></li>
                             <li role="presentation" class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Facility<span class="caret"></span></a>
+                                <a class="dropdown-toggle facility" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Facility<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#wrbContainer">Will Rogers Ballroom</a></li>
                                     <li><a href="#cehContainer">Clarmore Exhibit Hall</a></li>
@@ -61,7 +63,7 @@
                                     <li><a href="#pContainer">Patio</a></li>
                                     <li><a href="#cpkContainer">Catering/Prep Kitchen</a></li>
                                 </ul>
-                            </li>                         
+                            </li>
                             <li><a href="#hotelContainer">Hotel</a></li>
                             <li><a href="#packagesContainer">Special Events & Packages</a></li>
                             <!--<li><a href="#scheduleContainer">Schedule of Event</a></li>-->
@@ -75,19 +77,15 @@
     <main>
         <div id="heroContainer">
             <div class="containerWrapper">
-                <div class="cycle-slideshow" 
-                    data-cycle-fx="scrollHorz" 
-                    data-cycle-slides="> div"
-                    data-cycle-timeout="8000"
-                    >
+                <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-slides="> div" data-cycle-timeout="8000">
                     <!--slide 1-->
                     <div>
                         <div id="slide0">
                             <div class="container">
                                 <div class="jumbotron">
-                                  <h1>Hello, world!</h1>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                                    <h1>Hello, world!</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
                                 </div>
                             </div>
                         </div>
@@ -97,9 +95,9 @@
                         <div id="slide1">
                             <div class="container">
                                 <div class="jumbotron">
-                                  <h1>Hello, world!</h1>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                                    <h1>Hello, world!</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
                                 </div>
                             </div>
                         </div>
@@ -109,9 +107,9 @@
                         <div id="slide2">
                             <div class="container">
                                 <div class="jumbotron">
-                                  <h1>Hello, world!</h1>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                                    <h1>Hello, world!</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
                                 </div>
                             </div>
                         </div>
@@ -121,9 +119,9 @@
                         <div id="slide3">
                             <div class="container">
                                 <div class="jumbotron">
-                                  <h1>Hello, world!</h1>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                                    <h1>Hello, world!</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +140,7 @@
             <div class="containerWrapper">
                 <div class="container">
                     <h2>Home</h2>
-                    <img height="300"src="/static/images/hotelBG.jpg"  class="fullWidth"/> 
+                    <img height="300" src="/static/images/hotelBG.jpg" class="fullWidth" />
                     <p>From Simple to Simply Amazing…. Located just minutes from Tulsa, Claremore’s premier facility boasts over 23,000 square feet of indoor and outdoor meeting and event space. With friendly, helpful staff and pricing to fit every budget why not plan your next function at our beautiful new facility.</p>
                 </div>
             </div>
@@ -174,7 +172,7 @@
             <div class="containerWrapper">
                 <div class="container">
                     <h2>Will Rogers Ballroom</h2>
-                    <p>The Will Rogers Ballroom is the main meeting space in the facility. It is approximately 5400 square feet and features state of the art sound and video equipment including two 110” drop down screens and wireless projectors and microphones. It can comfortably house up to 450 guests in a banquet style seating arraignment and as many as 750 in a theater style arraignment. (Other seating configurations available) This room also boasts many comprehensive features such as a 10’ overhead door for easy load in and out, high ceilings, a beautiful polished concrete floor, as well being connected to our spacious new catering kitchen so your caterers can take care of your guests need with ease. This space is perfect for weddings, parties, corporate training events and meetings.</p> 
+                    <p>The Will Rogers Ballroom is the main meeting space in the facility. It is approximately 5400 square feet and features state of the art sound and video equipment including two 110” drop down screens and wireless projectors and microphones. It can comfortably house up to 450 guests in a banquet style seating arraignment and as many as 750 in a theater style arraignment. (Other seating configurations available) This room also boasts many comprehensive features such as a 10’ overhead door for easy load in and out, high ceilings, a beautiful polished concrete floor, as well being connected to our spacious new catering kitchen so your caterers can take care of your guests need with ease. This space is perfect for weddings, parties, corporate training events and meetings.</p>
                     <p>This space is also available to be split into two pieces via a floating air wall, Will Rogers North is then 2000 Square feet and Will Rogers South is 3400 square feet</p>
                 </div>
             </div>
@@ -192,7 +190,6 @@
                 <div class="container">
                     <h2>Mickey Perry Board Room</h2>
                     <p>The Mickey Perry board room is approximately 190 square feet and features a beautiful conference table, and state of the art conference equipment. You can comfortably hold meetings for up to 10 people in this space.</p>
-
                 </div>
             </div>
         </div>
@@ -201,7 +198,6 @@
                 <div class="container">
                     <h2>Lynn Riggs & J.M. Davis Rooms</h2>
                     <p>Our Lynn Riggs and J.M. Davis rooms are each 800 square feet. They both feature state of the art sound and video equipment as well as well as a wet bar for your convenience. Each room can seat approximately 40 people in a banquet style configuration or 75 utilizing a theater style set up. These rooms also have floating air walls that can be used to divide them into 400 square foot spaces.</p>
-
                 </div>
             </div>
         </div>
@@ -236,7 +232,8 @@
                                 <li>Break Service</li>
                             </ul>
                         </div>
-                        <div class="col-sm-6"><h3>Venue Service & Utlities</h3>
+                        <div class="col-sm-6">
+                            <h3>Venue Service & Utlities</h3>
                             <ul>
                                 <li>Wireless Microphone</li>
                                 <li>Wireless Projectors</li>
@@ -248,8 +245,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12">                    
-                            <h3>Event Services</h3>                   
+                        <div class="col-sm-12">
+                            <h3>Event Services</h3>
                             <ul>
                                 <li>Onsite Venue & Logistics Management</li>
                                 <li>Audio/Video & Event Production</li>
@@ -283,21 +280,21 @@
                     <h2>Hotel</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <div class="panel panel-default">
-	                    <div class="panel-heading">Panel heading without title</div>
-	                    <div class="panel-body">
-	                        Panel content
-	                    </div>
-	                </div>
-	                <div class="panel panel-default">
-	                    <div class="panel-heading">
-	                        <h3 class="panel-title">Panel title</h3>
-	                    </div>
-	                    <div class="panel-body">
-	                        Panel content
-	                    </div>
-	                    <div class="panel-footer">Panel footer</div>
-	                </div>
-	                </div>
+                        <div class="panel-heading">Panel heading without title</div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Panel title</h3>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                        <div class="panel-footer">Panel footer</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="galleryContainer">
@@ -306,23 +303,7 @@
                     <h2>Pricing</h2>
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="panel panel-primary">                       
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Panel title</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <ul>
-                                        <li>Note 1</li>
-                                        <li>Note 1</li>
-                                        <li>Note 1</li>
-                                        <li>Note 1</li>
-                                    </ul>
-                                </div>
-                                <div class="panel-footer">Panel footer</div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">                  
-                            <div class="panel panel-success">                       
+                            <div class="panel panel-primary">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Panel title</h3>
                                 </div>
@@ -338,7 +319,23 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="panel panel-info">                        
+                            <div class="panel panel-success">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel title</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>Note 1</li>
+                                        <li>Note 1</li>
+                                        <li>Note 1</li>
+                                        <li>Note 1</li>
+                                    </ul>
+                                </div>
+                                <div class="panel-footer">Panel footer</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-info">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Panel title</h3>
                                 </div>
@@ -358,57 +355,57 @@
             </div>
         </div>
         <!--<div id="scheduleContainer">
-            <div class="containerWrapper">
-                <div class="container">
-                    <h2>Schedule</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div class="row">
-                      <div class="col-xs-6 col-md-3">
-                        <a href="#" class="thumbnail">
-                          <img alt="" src="/static/images/contactBG.jpg" style="height: 180px; width: 100%; display: block;">
-                        </a>
-                      </div>
-                      <div class="col-xs-6 col-md-3">
-                        <a href="#" class="thumbnail">
-                          <img alt="" src="/static/images/conferenceBG.jpg" style="height: 180px; width: 100%; display: block;">
-                        </a>
-                      </div>
-                      <div class="col-xs-6 col-md-3">
-                        <a href="#" class="thumbnail">
-                          <img alt="" src="/static/images/facilityBG.jpg" style="height: 180px; width: 100%; display: block;">
-                        </a>
-                      </div>
-                      <div class="col-xs-6 col-md-3">
-                        <a href="#" class="thumbnail">
-                          <img alt="" src="/static/images/hotelBG.jpg" style="height: 180px; width: 100%; display: block;">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-6 col-md-3">
-                        <a href="#" class="thumbnail">
-                          <img alt="" src="/static/images/pricingBG.jpg" style="height: 180px; width: 100%; display: block;">
-                        </a>
-                      </div>
-                      <div class="col-xs-6 col-md-3">
-                        <a href="#" class="thumbnail">
-                          <img alt="" src="/static/images/scheduleBG.jpg" style="height: 180px; width: 100%; display: block;">
-                        </a>
-                      </div>
-                      <div class="col-xs-6 col-md-3">
-                        <a href="#" class="thumbnail">
-                          <img alt="" src="/static/images/homeBG.jpg" style="height: 180px; width: 100%; display: block;">
-                        </a>
-                      </div>
-                      <div class="col-xs-6 col-md-3">
-                        <a href="#" class="thumbnail">
-                          <img alt="" src="/static/images/contactBG.jpg" style="height: 180px; width: 100%; display: block;">
-                        </a>
-                      </div>
+                <div class="containerWrapper">
+                    <div class="container">
+                        <h2>Schedule</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img alt="" src="/static/images/contactBG.jpg" style="height: 180px; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img alt="" src="/static/images/conferenceBG.jpg" style="height: 180px; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img alt="" src="/static/images/facilityBG.jpg" style="height: 180px; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img alt="" src="/static/images/hotelBG.jpg" style="height: 180px; width: 100%; display: block;">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img alt="" src="/static/images/pricingBG.jpg" style="height: 180px; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img alt="" src="/static/images/scheduleBG.jpg" style="height: 180px; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img alt="" src="/static/images/homeBG.jpg" style="height: 180px; width: 100%; display: block;">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-md-3">
+                                <a href="#" class="thumbnail">
+                                    <img alt="" src="/static/images/contactBG.jpg" style="height: 180px; width: 100%; display: block;">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>-->
+            </div>-->
         <div id="contactContainer">
             <div class="containerWrapper">
                 <div class="container">
@@ -416,14 +413,13 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <div class="col-md-6">
                         <ul class="list-group">
-                            <li class="list-group-item active"><h3>Location</h3></li>
+                            <li class="list-group-item active">
+                                <h3>Location</h3></li>
                             <li class="list-group-item">
                                 (918) 999-9999
                             </li>
                             <li class="list-group-item">
-                                1337 s elite dr,
-                                Some City, State
-                                7777
+                                1337 s elite dr, Some City, State 7777
                             </li>
                             <li class="list-group-item">
                                 email: someemail@emaildomain.com
@@ -444,71 +440,88 @@
         </div>
     </footer>
     <script type="text/javascript">
-        (function($){
-            $(function(){
-                var navToggle = $(".navbar-nav li a");
-                var navBar = $("#headerContainer .navbar-nav");
-                var collapse = function(){
-                    $(".navbar-collapse").collapse('hide');
+    (function($) {
+        $(function() {
+            var navToggle = $(".navbar-nav li a");
+            var navBar = $("#mainNav ul.navbar-nav");
+            var collapse = function() {
+                $(".navbar-collapse").collapse('hide');
+            }
+            var activate = function() {
+                navBar.find(".active").removeClass("active");
+                $(this).addClass("active");
+            }
+            var scrollToFacility = function() {
+                $(document).scrollTop($("#facilityContainer").offset().top);
+            }
+
+            var queue = function() {
+                    collapse();
+                    activate();
+                    scrollToFacility();
+                }
+/*                
+**              apply scroll to for facilities
+**                  $('a[href="#facilityContainer"]').bind('click', function(){
+**                  $(document).scrollTop($("#facilityContainer").offset().top);
+**              });
+**/
+
+            function resizeQueue() {
+                if ($(window).outerWidth() < 768) {
+                    /** Bind to ALL main menu list anchors collapsing functionality if the EU is on a mobile device **/
+                    navToggle.bind('click', collapse);
+                    /** Unbind the scrollTo functionality to all the anchor tags with the href value of facilityContainer, so it can scroll when hover dropdown is active **/
+                    $('a[href="#facilityContainer"]').unbind('click', scrollToFacility);
+                    /**  **/
+                    navBar.find("li > a").unbind('click', activate);
+                } else {
+                    /** Unbind ALL main menu list anchors collapsing functionality if the EU is not on a mobile device **/
+                    navToggle.unbind('click', collapse);
+                    /** Bind the scrollTo functionality to all the anchor tags with the href value of facilityContainer, so it can scroll when hover dropdown is active **/
+                    $('a[href="#facilityContainer"]').bind('click', scrollToFacility);
+                    /**  **/
+                    navBar.find("li > a").bind('click', activate);
                 }
 
-                var activate = function(){
-                    navBar.find(".active").removeClass("active");
-                    $(this).addClass("active");
+                var testContainerConstraints = function(index, value) {
+                    var paddingHeight = ($(window).outerHeight() / 5) * 2;
+                    var totalHeight = paddingHeight + $(this).find(".container").outerHeight();
+                    if ($(this).outerHeight() < totalHeight) {
+                        $(this).toggleClass('expandedContainer');
+                    }
                 }
+                $("main > div").each(testContainerConstraints);
+            }
+            resizeQueue();
+            $(window).smartresize(resizeQueue(), 500, true);
+        });
+    })(jQuery);
+    (function($, sr) {
+        var debounce = function(func, threshold, execAsap) {
+            var timeout;
+            return function debounced() {
+                var obj = this,
+                    args = arguments;
+                console.log(this, func, threshold, execAsap);
 
-                function resizeQueue(){
-                    if($(window).outerWidth() < 768){
-                        navToggle.bind('click', collapse);
-                    }else{
-                        navToggle.unbind('click', collapse);
-                    }
-
-                    if($(window).outerWidth() > 768){
-                        navBar.find("li > a").bind('click', activate);
-                    }else{
-                        navBar.find("li > a").unbind('click', activate);
-                    }
-
-                    var testContainerConstraints = function(index, value){
-                        var paddingHeight = ($(window).outerHeight() / 5) * 2;
-                        var totalHeight = paddingHeight + $(this).find(".container").outerHeight(); 
-                        if($(this).outerHeight() < totalHeight){
-                            $(this).toggleClass('expandedContainer');
-                        }
-                    }
-
-                    $("main > div").each(testContainerConstraints);
-                }
-
-                resizeQueue();
-                $(window).smartresize(resizeQueue(), 500, true);
-            });
-        })(jQuery);
-
-        (function($,sr){
-          var debounce = function (func, threshold, execAsap) {
-              var timeout;
-              return function debounced () {
-                  var obj = this, args = arguments;
-                  console.log(this, func, threshold, execAsap);
-                  function delayed () {
-                      if (!execAsap)
-                          func.apply(obj, args);
-                      timeout = null;
-                  };
-
-                  if (timeout)
-                      clearTimeout(timeout);
-                  else if (execAsap)
-                      func.apply(obj, args);
-
-                  timeout = setTimeout(delayed, threshold || 100);
-              };
-          }
-          jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
-
-        })(jQuery,'smartresize');
+                function delayed() {
+                    if (!execAsap)
+                        func.apply(obj, args);
+                    timeout = null;
+                };
+                if (timeout)
+                    clearTimeout(timeout);
+                else if (execAsap)
+                    func.apply(obj, args);
+                timeout = setTimeout(delayed, threshold || 100);
+            };
+        }
+        jQuery.fn[sr] = function(fn) {
+            return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
+        };
+    })(jQuery, 'smartresize');
     </script>
 </body>
+
 </html>
