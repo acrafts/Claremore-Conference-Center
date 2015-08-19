@@ -9,6 +9,10 @@
 	z-index: 1001;
 }
 
+.h1, .h2, .h3, h1, h2, h3{
+	margin: 0 0 10px 0;
+}
+
 a, a:visited, a:hover, a:focus, a:link{
 	color: #0C8B07;
 }
@@ -42,7 +46,7 @@ a, a:visited, a:hover, a:focus, a:link{
 	z-index: 1003;
 }
 
-@media (min-width: 760px){
+@media (min-width: 768px){
 	#mainNav ul.navbar-nav > li:hover{
 		border-bottom: solid 4px #96C086;
 	}
@@ -65,6 +69,7 @@ main{}
 main > div {
 	height: 100vh;
 	padding: 0 0 0 0;
+	background-size: cover !important;
 }
 
 main div.expandedContainer{
@@ -85,7 +90,7 @@ main > div > div.containerWrapper >div.container{
 	-webkit-box-shadow: 0 0 20px rgba(0,0,0,.7);
 	-moz-box-shadow: 0 0 20px rgba(0,0,0,.7);
 	box-shadow: 0 0 20px rgba(0,0,0,.7);
-	padding-bottom: 20px;
+	padding: 20px 20px 20px 20px;
 }
 
 main > div > div > .container{
@@ -94,7 +99,6 @@ main > div > div > .container{
 
 #heroContainer, #homeContainer, #conferenceContainer, #facilityContainer, #hotelContainer, #pricingContainer, #scheduleContainer, #contactContainer{
 	background: rgba(0,0,0,0.5);
-	background-size: cover;
 }
 
 #homeContainer {
@@ -128,25 +132,25 @@ main > div > div > .container{
 	background-image: url('../images/facilityBG.jpg');
 }
 #wrbContainer{
-	/*background-image: url('../images/wrbBG.jpg');*/
+	background-image: url('../images/wrbBG.jpg');
 }
 #cehContainer{
-	/*background-image: url('../images/cehBG.jpg');*/
+	background-image: url('../images/cehBG.jpg');
 }
 #mpbrContainer{
-	/*background-image: url('../images/mpbrBG.jpg');*/
+	background-image: url('../images/mpbrBG.jpg');
 }
 #lrjmdrContainer{
-	/*background-image: url('../images/lrjmdrBG.jpg');*/
+	background-image: url('../images/lrjmdrBG.jpg');
 }
 #otContainer{
-	/*background-image: url('../images/otBG.jpg');*/
+	background-image: url('../images/otBG.jpg');
 }
 #pContainer{
-	/*background-image: url('../images/pBG.jpg');*/
+	background-image: url('../images/pBG.jpg');
 }
 #cpkContainer{
-	/*background-image: url('../images/cpkBG.jpg');*/
+	background-image: url('../images/cpkBG.jpg');
 	text-align: center;
 }
 #cpkContainer ul{
@@ -290,6 +294,7 @@ div#heroContainer > div.containerWrapper > div.cycle-slideshow > div.cycle-slide
 	}  
 }
 
+
 /*Google Maps*/
 #map-canvas {
 	width: 100%;
@@ -307,8 +312,15 @@ footer{
 
 
 
-
-@media (min-width: 760px){
+.dropdown-menu>li>a.mobileOnly{
+	display: none;
+}
+@media (max-width: 768px){
+	.dropdown-menu>li>a.mobileOnly{
+		display: block;
+	}
+}
+@media (min-width: 768px){
 	.dropdown-menu .sub-menu {
 	    left: 100%;
 	    position: absolute;

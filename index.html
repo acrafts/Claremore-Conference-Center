@@ -53,8 +53,9 @@
                         <ul class="nav navbar-nav">
                             <li><a href="#homeContainer" class="active">Home</a></li>
                             <li role="presentation" class="dropdown">
-                                <a class="dropdown-toggle facility" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Facility<span class="caret"></span></a>
+                                <a id="facility-sub-nav" class="dropdown-toggle facility" data-toggle="dropdown" href="#facilityContainer" role="button" aria-haspopup="true" aria-expanded="false">Facility<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
+                                    <li><a class="mobileOnly" href="#facilityContainer">Facility</a></li>
                                     <li><a href="#wrbContainer">Will Rogers Ballroom</a></li>
                                     <li><a href="#cehContainer">Clarmore Exhibit Hall</a></li>
                                     <li><a href="#mpbrContainer">Mickey Perry Board Room</a></li>
@@ -140,7 +141,6 @@
             <div class="containerWrapper">
                 <div class="container">
                     <h2>Home</h2>
-                    <img height="300" src="/static/images/hotelBG.jpg" class="fullWidth" />
                     <p>From Simple to Simply Amazing…. Located just minutes from Tulsa, Claremore’s premier facility boasts over 23,000 square feet of indoor and outdoor meeting and event space. With friendly, helpful staff and pricing to fit every budget why not plan your next function at our beautiful new facility.</p>
                 </div>
             </div>
@@ -148,23 +148,7 @@
         <div id="facilityContainer">
             <div class="containerWrapper">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h2>Conference Pane 1</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>Conference Pane 2</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>Conference Pane 2</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </div>
+                    <img class="fullWidth" src="static/images/claremore-conference-center-layout.jpg" />
                 </div>
             </div>
         </div>
@@ -261,7 +245,7 @@
         <div id="hotelContainer">
             <div class="containerWrapper">
                 <div class="container">
-                    <h2>Facility</h2>
+                    <h2>Hotel</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod mpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, is nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo nsequat. uis aute irure dolor in reprehenderit in voluptate velit esse llum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <h3>Lorem ipsum dolor sit amet</h3>
@@ -444,8 +428,14 @@
         $(function() {
             var navToggle = $(".navbar-nav li a");
             var navBar = $("#mainNav ul.navbar-nav");
-            var collapse = function() {
-                $(".navbar-collapse").collapse('hide');
+            var collapse = function(e) {
+                var subDropdown = $(this).next('ul.dropdown-menu');
+                if( subDropdown.length == 0 ){
+                    $(".navbar-collapse").collapse('hide');
+                }else{
+                    //do something
+                    return;
+                }
             }
             var activate = function() {
                 navBar.find(".active").removeClass("active");
@@ -455,19 +445,8 @@
                 $(document).scrollTop($("#facilityContainer").offset().top);
             }
 
-            var queue = function() {
-                    collapse();
-                    activate();
-                    scrollToFacility();
-                }
-/*                
-**              apply scroll to for facilities
-**                  $('a[href="#facilityContainer"]').bind('click', function(){
-**                  $(document).scrollTop($("#facilityContainer").offset().top);
-**              });
-**/
-
             function resizeQueue() {
+                console.log("hello");
                 if ($(window).outerWidth() < 768) {
                     /** Bind to ALL main menu list anchors collapsing functionality if the EU is on a mobile device **/
                     navToggle.bind('click', collapse);
@@ -475,6 +454,8 @@
                     $('a[href="#facilityContainer"]').unbind('click', scrollToFacility);
                     /**  **/
                     navBar.find("li > a").unbind('click', activate);
+
+                    $('#facility-sub-nav').attr('href','#');
                 } else {
                     /** Unbind ALL main menu list anchors collapsing functionality if the EU is not on a mobile device **/
                     navToggle.unbind('click', collapse);
@@ -482,6 +463,7 @@
                     $('a[href="#facilityContainer"]').bind('click', scrollToFacility);
                     /**  **/
                     navBar.find("li > a").bind('click', activate);
+                    $('#facility-sub-nav').attr('href','#facilityContainer');
                 }
 
                 var testContainerConstraints = function(index, value) {
@@ -494,7 +476,7 @@
                 $("main > div").each(testContainerConstraints);
             }
             resizeQueue();
-            $(window).smartresize(resizeQueue(), 500, true);
+            $(window).smartresize(resizeQueue());
         });
     })(jQuery);
     (function($, sr) {
