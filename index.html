@@ -20,8 +20,8 @@
     function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
         var mapOptions = {
-            center: new google.maps.LatLng(44.5403, -78.5463),
-            zoom: 8,
+            center: new google.maps.LatLng(36.294052, -95.625433),
+            zoom: 11,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
@@ -33,7 +33,7 @@
 
 <body>
     <header>
-        <div id="headerContainer" class="navbar-static-top container-fluid" data-spy="affix" data-offset-top="168">
+        <div id="headerContainer" class="navbar-static-top container-fluid" data-spy="affix" data-offset-top="168" data-offset-bottom="0">
             <div class="container">
                 <div class="navbar-header">
                     <div>
@@ -65,6 +65,7 @@
                                     <li><a href="#cpkContainer">Catering/Prep Kitchen</a></li>
                                 </ul>
                             </li>
+                            <li><a href="#suggestionContainer">Configuration Suggestions</a></li>
                             <li><a href="#hotelContainer">Hotel</a></li>
                             <li><a href="#packagesContainer">Special Events & Packages</a></li>
                             <!--<li><a href="#scheduleContainer">Schedule of Event</a></li>-->
@@ -242,6 +243,43 @@
                 </div>
             </div>
         </div>
+        <div id="suggestionContainer">
+            <div class="containerWrapper" class="expandedContainer">
+                <div class="container">
+                    <h2>Configruation Suggestions</h2>
+                    <div class="suggestions-left">
+                        <h3>Conference and Hollow Square:</h3>
+                    </div> 
+                    <div class="suggestions-right">
+                        Appropriate for interactive discussions and note-taking sessions for fewer than 25 people.
+                    </div>
+                    <div class="suggestions-left">
+                        <h3>E-shape, U-shape and T-shape:</h3>
+                    </div>
+                    <div class="suggestions-right">
+                        Appropriate for groups of fewer than 40 people. These are best for interaction with a leader seated at the head of the setup. Audiovisual equipment is usually set up at the open end of the seating.
+                    </div>
+                    <div class="suggestions-left">
+                        <h3>Ovals and rounds:</h3>
+                    </div> 
+                    <div class="suggestions-right">
+                        Generally used for meals and sessions involving small group discussions. A five-foot-round table seats eight people comfortably. A six-foot-round table seats 10 people comfortably.
+                    <div>
+                    <div class="suggestions-left">
+                        <h3>Theater:</h3>
+                    </div>
+                    <div class="suggestions-right">
+                        Appropriate for large sessions and short lectures that do not require extensive note taking. This is a convenient setup to use before breaking into discussion or role-playing groups because chairs can be moved.
+                    </div>
+                    <div class="suggestions-left">
+                        <h3>Schoolroom or Classroom:</h3>
+                    </div>
+                    <div class="suggestions-right">
+                        The most desirable setup for medium to large-size lectures. This configuration requires a relatively large room. Tables provide attendees with space for spreading out materials and taking notes.
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="hotelContainer">
             <div class="containerWrapper">
                 <div class="container">
@@ -398,15 +436,39 @@
                     <div class="col-md-6">
                         <ul class="list-group">
                             <li class="list-group-item active">
-                                <h3>Location</h3></li>
+                                <h3>Claremore Conference Center</h3></li>
                             <li class="list-group-item">
-                                (918) 999-9999
+                                <div class="contact-left">
+                                    Phone:
+                                </div> 
+                                <div class="contact-right">
+                                    918.965.1931
+                                </div>
                             </li>
                             <li class="list-group-item">
-                                1337 s elite dr, Some City, State 7777
+                                <div class="contact-left">
+                                    Fax:
+                                </div>
+                                <div class="contact-right">
+                                    918.965.1932
+                                </div>
+                            </li>                            
+                            <li class="list-group-item">
+                                <div class="contact-left">
+                                    Address:
+                                </div> 
+                                <div class="contact-right">
+                                    1400 West Country Club Road,<br/>
+                                    Claremore, Ok, 74017
+                                <div>
                             </li>
                             <li class="list-group-item">
-                                email: someemail@emaildomain.com
+                                <div class="contact-left">
+                                    Email:
+                                </div>
+                                <div class="contact-right">
+                                    kcole@promisehotels.com
+                                </div>
                             </li>
                         </ul>
                     </div>
